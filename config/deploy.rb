@@ -1,11 +1,11 @@
-server "192.168.100.203", :web, :app, :db, primary: true
+server "45.55.164.150", :web, :app, :db, primary: true
 set :application, "test_deploy"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :scm, "git"
-set :repository, " https://github.com/quynhbv/#{application}.git"
+set :repository, " https://github.com/asvenus/#{application}.git"
 set :branch, "master"
 set :stages, ["staging", "production"]
 set :default_stage, "staging"
